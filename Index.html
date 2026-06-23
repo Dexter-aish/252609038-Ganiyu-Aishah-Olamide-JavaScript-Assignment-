@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All JavaScript Assignments</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 15px; background-color: #f4f4f9; color: #333; transition: background-color 0.4s; }
+        h1, h2, h3 { color: #2c3e50; }
+        section { background: white; padding: 20px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* Task 2: Cart Styles */
+        .product { padding: 10px; border: 1px solid #ddd; margin-bottom: 8px; border-radius: 4px; background: #fafafa; }
+        button { background-color: #3498db; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 4px; }
+        button:hover { background-color: #2980b9; }
+        
+        /* Task 3: Quiz Styles */
+        .quiz-btn { display: block; width: 100%; max-width: 300px; margin: 8px 0; text-align: left; background: #ecf0f1; color: #333; }
+        .quiz-btn:hover { background: #bdc3c7; }
+        
+        /* Task 4: Table Styles */
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #2ecc71; color: white; }
+        .Pass { color: green; font-weight: bold; }
+        .Fail { color: red; font-weight: bold; }
+        
+        /* Task 5: Form Styles */
+        .field { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input { width: 100%; max-width: 300px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .feedback { font-size: 13px; margin-top: 4px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Assignments Hub</h1>
+    <p><em>Note: Task 1 (Library System) outputs its results directly to the Browser Console!</em></p>
+
+    <section>
+        <h2>Task 2: Dynamic Shopping Cart</h2>
+        <div id="products-list"></div>
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p><strong>Total Price: ₦<span id="total-price">0</span></strong></p>
+    </section>
+
+    <section>
+        <h2>Task 3: Interactive Quiz</h2>
+        <div id="quiz-container">
+            <h3 id="quiz-question">Loading Question...</h3>
+            <div id="quiz-options"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Task 4: Student Results (JSON Parsing)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Average Score</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="student-table-body"></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Task 5: Real-Time Form Validator</h2>
+        <div class="field">
+            <label>Username (Alphanumeric, 5-15 chars)</label>
+            <input type="text" id="username">
+            <div id="username-feedback" class="feedback"></div>
+        </div>
+        <div class="field">
+            <label>Password (Min 8 chars, 1 Upper, 1 Digit, 1 Special)</label>
+            <input type="password" id="password">
+            <div id="password-feedback" class="feedback"></div>
+        </div>
+        <div class="field">
+            <label>Nigerian Phone Number (+234...)</label>
+            <input type="text" id="phone" placeholder="+234">
+            <div id="phone-feedback" class="feedback"></div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
